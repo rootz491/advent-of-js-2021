@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <form name="set_clock" class="dialog" hidden>
+        <div class="label_wrapper">
+            <p>minute</p>
+            <p>second</p>
+        </div>
+        <div class="input_wrapper">
+            <input type="number" value="0" name="get_min" class="get_min">
+            <input type="number" value="0" name="get_sec" class="get_sec">
+        </div>
+        <div>
+            <button type="submit">go</button>
+        </div>
+    </form>
+    
+    <div class="clock">
+        <div class="clock__time">
+            <span class="clock__time-minutes">00</span>:<span class="clock__time-seconds">00</span>
+        </div>
+        <div class="clock__controls">
+            <label for="trigger" class="clock__controls-start clock_btns">start</label>
+            <label for="trigger" class="clock__controls-stop clock_btns" hidden>stop</label>
+            <input type="checkbox" name="trigger" id="trigger" hidden/>
+        </div>
+        <button class="clock__settings">
+            <img src="https://img.icons8.com/small/64/ffffff/gear.png"/>
+        </button>
+    </div>
+
+</body>
+</html>
